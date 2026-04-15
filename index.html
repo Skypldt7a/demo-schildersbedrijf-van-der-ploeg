@@ -237,7 +237,9 @@ footer{background:var(--dark2);padding:30px 72px 18px;}
 /* PERFORMANCE: skip rendering van below-the-fold secties tot ze in beeld komen */
 .diensten-sec,.merken-balk,.portfolio-sec,.werkwijze-sec,.brand-balk,.reviews-sec,.mid-cta,.faq-contact,footer{content-visibility:auto;contain-intrinsic-size:auto 600px;}
 
+.mob-br{display:none;}
 @media(max-width:768px){
+  .mob-br{display:inline;}
   /* NAV */
   nav{padding:12px 16px;gap:8px;}
   .nav-links{display:none;}
@@ -373,7 +375,7 @@ footer{background:var(--dark2);padding:30px 72px 18px;}
 <body>
 <a href="#main-content" class="skip-link">Ga naar inhoud</a>
 <nav role="navigation" aria-label="Hoofdnavigatie">
-  <a href="/" class="logo" aria-label="Schildersbedrijf van der Ploeg, Startpagina"><img src="logo-icon.png?v=2" class="logo-nav-img" alt="Logo Schildersbedrijf van der Ploeg" style="height:35px;width:auto;max-width:none;filter:grayscale(1) sepia(1) hue-rotate(90deg) saturate(0.85) brightness(0.75) opacity(0.90);mix-blend-mode:multiply;"><span class="logo-text">Schildersbedrijf van der Ploeg<span class="logo-sub">Heiloo & omgeving</span></span></a>
+  <a href="/" class="logo" aria-label="Schildersbedrijf van der Ploeg, Startpagina"><img src="logo-icon.png?v=2" class="logo-nav-img" alt="Logo Schildersbedrijf van der Ploeg" style="height:35px;width:auto;max-width:none;filter:grayscale(1) sepia(1) hue-rotate(90deg) saturate(0.85) brightness(0.75) opacity(0.90);mix-blend-mode:multiply;"><span class="logo-text">Schildersbedrijf van<br class="mob-br"> der Ploeg<span class="logo-sub">Heiloo & omgeving</span></span></a>
   <div class="nav-links">
     <a class="nav-link" href="#diensten">Diensten</a>
     <a class="nav-link" href="#portfolio">Portfolio</a>
